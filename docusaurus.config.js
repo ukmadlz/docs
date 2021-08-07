@@ -1,0 +1,116 @@
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+
+/** @type {import('@docusaurus/types').DocusaurusConfig} */
+module.exports = {
+  title: 'CloudQuery Docs',
+  tagline: 'Solve compliance, security and cost challenges with SQL queries and relational tables.',
+  url: 'https://docs.cloudquery.io',
+  baseUrl: '/',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
+  organizationName: 'cloudquery', // Usually your GitHub org/user name.
+  projectName: 'cq-docs', // Usually your repo name.
+  themeConfig: {
+    colorMode: {
+      // "light" | "dark"
+      defaultMode: 'dark',
+    },
+    navbar: {
+      title: 'CloudQuery Docs',
+      logo: {
+        alt: 'CloudQuery Logo',
+        src: 'img/logo.svg',
+      },
+      items: [
+        // {
+        //   type: 'doc',
+        //   docId: 'intro',
+        //   position: 'left',
+        //   label: 'Docs',
+        // },
+        {to: 'https://cloudquery.io', label: 'Home', position: 'right'},
+        {to: 'https://cloudquery.io', label: 'Hub', position: 'right'},
+        {to: 'https://cloudquery.io/blog', label: 'Blog', position: 'right'},
+        {
+          href: 'https://github.com/cloudquery/cloudquery',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Tutorial',
+              to: '/docs/intro',
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+            },
+            {
+              label: 'Discord',
+              href: 'https://discordapp.com/invite/docusaurus',
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/docusaurus',
+            },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            {
+              label: 'Blog',
+              to: 'https://cloudquery.io/blog',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/cloudquery/cloudquery',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} CloudQuery, Inc.`,
+    },
+    prism: {
+      darkTheme: darkCodeTheme,
+      theme: lightCodeTheme,
+      additionalLanguages: ['hcl', 'powershell'],
+    },
+  },
+  presets: [
+    [
+      '@docusaurus/preset-classic',
+      {
+        docs: {
+          sidebarPath: require.resolve('./sidebars.js'),
+          // Please change this to your repo.
+          editUrl:
+            'https://github.com/facebook/docusaurus/edit/master/website/',
+        },
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          editUrl:
+            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+        },
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
+      },
+    ],
+  ],
+};
