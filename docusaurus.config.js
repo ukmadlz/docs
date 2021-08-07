@@ -48,7 +48,7 @@ module.exports = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discord.gg/QwnWfrcfHg',
+              href: 'https://cloudquery.io/discord',
             },
             {
               label: 'Twitter',
