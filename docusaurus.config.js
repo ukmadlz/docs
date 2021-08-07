@@ -54,6 +54,10 @@ module.exports = {
               label: 'Twitter',
               href: 'https://twitter.com/cloudquery',
             },
+            {
+              label: 'Linkedin',
+              href: 'https://www.linkedin.com/company/cloudqueryio',
+            },
           ],
         },
         {
