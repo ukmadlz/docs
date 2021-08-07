@@ -12,7 +12,7 @@ CloudQuery extracts, transforms (normalize) and loads (ETL) the data from scatte
 
 You can write your security & compliance rules using SQL as the query language and HCL as the engine. Just like you use IaC to build, change and version your infrastrucure. You can use CloudQuery Policies to monitor, alert and version your cloud-infrastructure security & compliance rules.
 
-### Extnesible
+### Extensible
 
 CloudQuery is an open-source and extensible framework. All official and approved community providers and policies are listed in [CloudQuery Hub](https://hub.cloudquery.io). See [Developing new Provider](./developers/developing-new-provider.md)
 
