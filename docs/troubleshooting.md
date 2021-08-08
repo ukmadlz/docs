@@ -16,7 +16,7 @@ There are couple of ways to get help for any CloudQuery-related issues or questi
 
 Our Intercom chat is available on all our public sites, so feel free to drop us a line there.
 
-## Deubbing
+## Debugging
 
 ### Logging
 
