@@ -10,7 +10,7 @@ CloudQuery extracts, transforms (normalize), and loads (ETL) the data from scatt
 
 ### Security and Compliance as Code
 
-You can write your security and compliance rules using SQL as the query language and HCL as the engine. Just like you use IaC to build, change, and version your infrastrucure, you can use CloudQuery Policies to monitor, alert, and version your cloud infrastructure security and compliance rules.
+You can write your security and compliance rules using SQL as the query language and HCL as the engine. Just like you use IaC to build, change, and version your infrastructure, you can use CloudQuery Policies to monitor, alert, and version your cloud infrastructure security and compliance rules.
 
 ### Extensible
 
