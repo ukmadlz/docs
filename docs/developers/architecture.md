@@ -6,7 +6,7 @@ CloudQuery has a pluggable architecture and is using the [go-plugin](https://git
 
 ![cloudquery high-level architecture](/img/cloudquery-architecture.png)
 
-Similarly to any application utilizing the [go-plugin](https://github.com/hashicorp/go-plugin) framework, CloudQuery is split into [CloudQuery Core](https://github.com/cloudquery/cloudquery) and [CloudQuery Providers](https://github.com/cloudquery/cloudquery/tree/main/providers).
+Similarly to any application utilizing the [go-plugin](https://github.com/hashicorp/go-plugin) framework, CloudQuery is split into [CloudQuery Core](https://github.com/cloudquery/cloudquery) and [CloudQuery Providers](https://github.com/orgs/cloudquery/repositories?language=&q=cloudquery-provider&sort=&type=).
 
 ### CloudQuery Core Responsibilities
 
