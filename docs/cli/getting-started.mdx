@@ -20,17 +20,19 @@ Download latest version:
 
 
 ```bash
-export OS=Darwin # Possible values: Linux,Windows,Darwin
-curl -L https://github.com/cloudquery/cloudquery/releases/latest/download/cloudquery_${OS}_x86_64 -o cloudquery
+export OS=Darwin # Possible values: Linux, Windows, Darwin
+export ARCH=x86_64 # Possible values x86_64, arm64
+curl -L https://github.com/cloudquery/cloudquery/releases/latest/download/cloudquery_${OS}_${ARCH} -o cloudquery
 chmod a+x cloudquery
 ```
 
 Download specific version:
 
 ```bash
-export OS=Darwin # Possible values: Linux,Windows,Darwin
+export OS=Darwin # Possible values: Linux, Windows, Darwin
+export ARCH=x86_64 # Possible values x86_64, arm64
 export VERSION= # specifiy a version
-curl -L https://github.com/cloudquery/cloudquery/releases/download/${VERSION}/cloudquery_${OS}_x86_64 -o cloudquery
+curl -L https://github.com/cloudquery/cloudquery/releases/download/${VERSION}/cloudquery_${OS}_${ARCH} -o cloudquery
 ```  
   </TabItem>
   <TabItem value="homebrew">
