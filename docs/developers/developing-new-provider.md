@@ -6,6 +6,8 @@ Before continuing, it is recommended to get familiar with [CloudQuery architectu
 
 CloudQuery providers utilize cq-provider-sdk, which abstracts most of the TL \(in ETL, extract-transform-load\). So, as a developer, you will only have to implement the \("E" in "ETL"\) initializing, authentication, and fetching of the data via the third-party APIs — the SDK will take care of transforming the data and loading it into the database. Also, your provider will get support out-of-the-box for new features and things like other database support as cloudquery-core progress. 
 
+## The Template
+
 Here is a template project from which you can create your own [https://github.com/cloudquery/cq-provider-template](https://github.com/cloudquery/cq-provider-template).
 
 We will go through the files in the template and explain each part that you need to implement.
@@ -202,3 +204,7 @@ Essentially, for each resource that you support, you just need to define two thi
 * The schema - how the table will look in the database - column names and types. 
 * Implement the main table resolver function that will fetch the data from the third-party SDK and pass it to the SDK. 
   * The SDK will automatically read the data and insert it into the table column using a default naming convention. The default naming convention is to CamelCase; in other words, if a column-name is `some_name`, the field name in the struct that you pass to the SDK should be: `SomeName`. If you want a different name or logic, you can implement a column resolver.
+
+## Publishing a provider
+
+To publish a provider so that it can be downloaded and added via the [`cloudquery init <provider>`](/docs/cli/commands/provider) command you'll need to [raise an issue](https://github.com/cloudquery/cloudquery/issues) with the relevant details so that we can add it to our registry.

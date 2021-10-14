@@ -35,7 +35,17 @@ module.exports = {
        {
         type: 'category',
         label: 'Commands',
-        items: ['cli/commands/init', 'cli/commands/fetch', 'cli/commands/policy', 'cli/commands/policy-download', 'cli/commands/policy-run', 'cli/commands/completion']
+        items: [
+          'cli/commands/completion',
+          'cli/commands/fetch',
+          'cli/commands/init',
+          'cli/commands/options',
+          'cli/commands/policy',
+          'cli/commands/policy-download',
+          'cli/commands/policy-run',
+          'cli/commands/provider',
+          'cli/commands/provider-download'
+        ]
        },   
       ],
     },
