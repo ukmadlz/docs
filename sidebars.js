@@ -23,20 +23,45 @@ module.exports = {
     },
     {
       type: 'doc',
-      label: 'Use Cases',
-      id: 'use-cases',
+      label: 'Getting Started',
+      id: 'getting-started',
     },
     {
       type: 'category',
       label: 'CLI',
       items: [
-       'cli/getting-started',
-       'cli/fetch-config-hcl',
+       {
+        type: 'category',
+        label: 'Fetch',
+        items: [
+          'cli/fetch/overview',
+          'cli/fetch/configuration'
+        ],
+       },
+      //  {
+      //   type: 'category',
+      //   label: 'Policy',
+      //   items: [
+      //     'cli/policy/overview',
+      //     'cli/policy/configuration'
+      //   ],
+      //  },
+       {
+        type: 'category',
+        label: 'Drift',
+        items: [
+          'cli/drift/overview',
+          'cli/drift/configuration'
+        ],
+       },
+       'cli/configuration',
        {
         type: 'category',
         label: 'Commands',
         items: [
           'cli/commands/completion',
+          'cli/commands/drift',
+          'cli/commands/drift-scan',
           'cli/commands/fetch',
           'cli/commands/init',
           'cli/commands/options',
