@@ -64,6 +64,13 @@ module.exports = {
        },
        {
         type: 'category',
+        label: 'Migrations',
+        items: [
+          'cli/migrations/overview',
+        ],
+       },
+       {
+        type: 'category',
         label: 'Commands',
         items: [
           'cli/commands/completion',
@@ -76,7 +83,11 @@ module.exports = {
           'cli/commands/policy-download',
           'cli/commands/policy-run',
           'cli/commands/provider',
-          'cli/commands/provider-download'
+          'cli/commands/provider-download',
+          'cli/commands/provider-build-schema',
+          'cli/commands/provider-upgrade',
+          'cli/commands/provider-downgrade',
+          'cli/commands/provider-drop',
         ]
        },   
       ],
@@ -89,7 +100,12 @@ module.exports = {
     {
       type: 'category',
       label: 'Developers',
-      items: ['developers/architecture', 'developers/debugging', 'developers/developing-new-provider'],
+      items: [
+        'developers/architecture', 
+        'developers/debugging', 
+        'developers/developing-new-provider',
+        'developers/migrations',
+      ],
     },
     {
       type: 'doc',
