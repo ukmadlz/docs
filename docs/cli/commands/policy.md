@@ -4,7 +4,9 @@ Top-level command to download and execute CloudQuery Policies.
 
 ## Usage
 
-`cloudquery policy [command]`
+```bash
+cloudquery policy [command]
+```
 
 ## Available Commands:
 ```
