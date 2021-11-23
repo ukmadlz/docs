@@ -12,7 +12,9 @@ Currently drifting between AWS and Terraform is supported. CloudQuery drift dete
 
 First we need to have a configuration file to help point the CloudQuery CLI to the various resources needed. Fortunately it’s easy to generate one with just a command:
 
-`cloudquery init aws`
+```bash
+cloudquery init aws
+```
 
 If you have multiple cloud providers, you can add-on extra ones, like `cloudquery init aws gcp` and so on.
 This command will generate a config.hcl file in the current directory. You don’t really need to edit this file much, just edit the “connection” block and change the DSN to point to your PostgreSQL installation.
@@ -30,11 +32,15 @@ If you were to dive deeper in this file, you can do:
 
 You don’t need any of this stuff to start. Just fetch your installation by running:
 
-`cloudquery fetch`
+```bash
+cloudquery fetch
+```
 
 Then check for drifts
 
-`cloudquery drift scan /path/to/the/tfstate/file.tfstate`
+```bash
+cloudquery drift scan /path/to/the/tfstate/file.tfstate
+```
 
 ### Results
 Scan results will look something like this:
