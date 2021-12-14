@@ -4,7 +4,9 @@ Top-level command to detect drifts in infrastructure-as-code.
 
 ## Usage
 
-`cloudquery drift [command]`
+```bash
+cloudquery drift [command]
+```
 
 ## Available Commands:
 ```

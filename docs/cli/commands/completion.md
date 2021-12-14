@@ -3,7 +3,10 @@
 Installs shell completion for CloudQuery CLI.
 
 ## Usage
+
+```bash
 cloudquery completion [bash|zsh|fish|powershell]
+```
 
 ### Bash
 
