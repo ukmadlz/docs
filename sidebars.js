@@ -90,7 +90,14 @@ module.exports = {
           'cli/commands/provider-downgrade',
           'cli/commands/provider-drop',
         ]
-       },   
+       },
+       {
+         type: 'category',
+         label: 'Docker',
+          items: [
+            'cli/docker/overview',
+          ]
+       }   
       ],
     },
     {
