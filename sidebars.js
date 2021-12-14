@@ -40,13 +40,21 @@ module.exports = {
        },
        {
         type: 'category',
+        label: 'History',
+        items: [
+          'cli/history/overview',
+          'cli/history/configuration',
+        ],
+       },
+       {
+        type: 'category',
         label: 'Policy',
         items: [
           'cli/policy/overview',
           'cli/policy/language',
           'cli/policy/configuration'
         ],
-       },
+       }, 
        {
         type: 'category',
         label: 'Drift',
@@ -92,12 +100,15 @@ module.exports = {
         ]
        },
        {
-         type: 'category',
+         type: 'doc',
          label: 'Docker',
-          items: [
-            'cli/docker/overview',
-          ]
-       }   
+         id: 'cli/docker'
+       },
+       {
+         type: 'doc',
+         label: 'Telemetry',
+         id: 'cli/telemetry'
+       }
       ],
     },
     {
