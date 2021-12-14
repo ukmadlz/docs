@@ -14,7 +14,7 @@ Fetch is both the CLI command and the process when CloudQuery extracts all the c
 
 ## Policy
 
-CloudQuery Policy that is written with HCL as the logic layer and SQL as the query layer.
+Policy compliance is a broad term and can refer to any kind of policy, from internal standards to regulatory requirements. A CloudQuery Policy is a codified form of this that is written with HCL as the logic layer and SQL as the query layer.
 
 ## Query
 
