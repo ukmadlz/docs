@@ -12,7 +12,7 @@ or connect to an existing one. For more install options of TimescaleDB see their
 For local, you can use the following docker command:
 
 ```bash
-docker run -d --name timescaledb -p 5432:5432 -e POSTGRES_PASSWORD=password timescale/timescaledb:latest-pg12
+docker run -d --name timescaledb -p 5432:5432 -e POSTGRES_PASSWORD=pass timescale/timescaledb:latest-pg12
 ```
 
 ### Configuration
