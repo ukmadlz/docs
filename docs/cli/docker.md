@@ -72,7 +72,13 @@ To check for the specific options for `cloudquery policy download` please consul
 This will return a block for you to add to your `config.hcl` that should be similar to:
 
 ```bash
-Add this block into your CloudQuery config file:policy "cloudquery-policies-aws-cis-1.2.0" {	type = "remote"	source = "https://github.com/cloudquery-policies/aws-cis-1.2.0.git"	sub_path = ""	version = ""}
+Add this block into your CloudQuery config file:
+policy "cloudquery-policies-aws-cis-1.2.0" {
+  type = "remote"
+  source = "https://github.com/cloudquery-policies/aws-cis-1.2.0.git"
+  sub_path = ""
+  version = ""
+}
 ```
 
 Now that the policy has been downloaded and cached you can execute the `cloudquery policy run` command to execute the policy:
