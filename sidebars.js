@@ -101,6 +101,11 @@ module.exports = {
        },
        {
          type: 'doc',
+         label: 'Docker',
+         id: 'cli/docker'
+       },
+       {
+         type: 'doc',
          label: 'Telemetry',
          id: 'cli/telemetry'
        }
