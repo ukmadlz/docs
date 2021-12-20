@@ -127,6 +127,13 @@ module.exports = {
       ],
     },
     {
+      type: 'category',
+      label: 'Tutorials',
+      items: [
+        'tutorials/creating-new-provider'
+      ],
+    },
+    {
       type: 'doc',
       label: 'Best Practices',
       id: 'best-practices',
