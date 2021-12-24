@@ -120,10 +120,38 @@ module.exports = {
       type: 'category',
       label: 'Developers',
       items: [
-        'developers/architecture', 
-        'developers/debugging', 
+        'developers/architecture',
+        'developers/debugging',
         'developers/developing-new-provider',
-        'developers/migrations',
+        {
+            type: 'category',
+            label: 'SDK',
+            items: [
+                'developers/sdk/overview',
+                {
+                    type: 'category',
+                    label: 'Provider',
+                    items: [
+                        'developers/sdk/provider/overview',
+                        'developers/sdk/provider/configuration',
+                        'developers/sdk/provider/error-classifier',
+                    ],
+                },
+                {
+                    type: 'category',
+                    label: 'Table',
+                    items: [
+                        'developers/sdk/table/overview',
+                        'developers/sdk/table/column-types',
+                        'developers/sdk/table/primary-key',
+                        'developers/sdk/table/multiplexer-and-deletefilter',
+                        'developers/sdk/table/fetch-resolvers',
+                        'developers/sdk/table/column-resolvers',
+                    ],
+                },
+                'developers/sdk/migrations',
+            ],
+        },
       ],
     },
     {
