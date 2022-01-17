@@ -1,6 +1,6 @@
 # Overview
 
-CloudQuery  is an open-source cloud asset inventory powered by SQL, as such, when providers change their schema (change/remove columns) some migrations from the previous run are required. CloudQuery uses [go-migrate](https://github.com/golang-migrate/migrate) under the hood to execute migrations on the database, see how to add them to a provider [here](./developers/migrations.md).
+CloudQuery  is an open-source cloud asset inventory powered by SQL, as such, when providers change their schema (change/remove columns) some migrations from the previous run are required. CloudQuery uses [go-migrate](https://github.com/golang-migrate/migrate) under the hood to execute migrations on the database, see how to add them to a provider [here](./developers/sdk/migrations.md).
 
 
 ## Running
@@ -31,4 +31,4 @@ cloudquery provider drop aws
 
 ## Fetch Auto upgrade
 
-Cloudquery automatically attempts to upgrade providers when fetch is executed, this action can be disabled by passing the `--skip-schema-upgrade` flag.
+CloudQuery automatically attempts to upgrade providers when fetch is executed, this action can be disabled by passing the `--skip-schema-upgrade` flag.
