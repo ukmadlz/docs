@@ -52,7 +52,7 @@ module.exports = {
         items: [
           'cli/policy/overview',
           'cli/policy/language',
-          'cli/policy/configuration'
+          'cli/policy/sources',
         ],
        }, 
        {
@@ -62,14 +62,6 @@ module.exports = {
           'cli/drift/overview',
           'cli/drift/configuration'
         ],
-       },
-       {
-        type: 'category',
-        label: 'Configuration',
-        items: [
-          'cli/configuration/overview',
-          'cli/configuration/providers'
-        ]
        },
        {
         type: 'category',
@@ -101,11 +93,24 @@ module.exports = {
        },
        {
          type: 'doc',
+         label: 'Docker',
+         id: 'cli/docker'
+       },
+       {
+         type: 'doc',
          label: 'Telemetry',
          id: 'cli/telemetry'
        }
       ],
     },
+      {
+          type: 'category',
+          label: 'Configuration',
+          items: [
+              'configuration/overview',
+              'configuration/providers'
+          ]
+      },
     {
       type: 'category',
       label: 'Deployment',
@@ -115,10 +120,46 @@ module.exports = {
       type: 'category',
       label: 'Developers',
       items: [
-        'developers/architecture', 
-        'developers/debugging', 
+        'developers/architecture',
+        'developers/debugging',
         'developers/developing-new-provider',
-        'developers/migrations',
+        {
+            type: 'category',
+            label: 'SDK',
+            items: [
+                'developers/sdk/overview',
+                {
+                    type: 'category',
+                    label: 'Provider',
+                    items: [
+                        'developers/sdk/provider/overview',
+                        'developers/sdk/provider/configuration',
+                        'developers/sdk/provider/error-classifier',
+                    ],
+                },
+                {
+                    type: 'category',
+                    label: 'Table',
+                    items: [
+                        'developers/sdk/table/overview',
+                        'developers/sdk/table/column-types',
+                        'developers/sdk/table/primary-key',
+                        'developers/sdk/table/multiplexer-and-deletefilter',
+                        'developers/sdk/table/fetch-resolvers',
+                        'developers/sdk/table/column-resolvers',
+                    ],
+                },
+                'developers/sdk/migrations',
+                'developers/sdk/testing',
+            ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Tutorials',
+      items: [
+        'tutorials/creating-new-provider'
       ],
     },
     {

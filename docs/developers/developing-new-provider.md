@@ -6,6 +6,8 @@ Before continuing, it is recommended to get familiar with [CloudQuery architectu
 
 CloudQuery providers utilize cq-provider-sdk, which abstracts most of the TL \(in ETL, extract-transform-load\). So, as a developer, you will only have to implement the \("E" in "ETL"\) initializing, authentication, and fetching of the data via the third-party APIs — the SDK will take care of transforming the data and loading it into the database. Also, your provider will get support out-of-the-box for new features and things like other database support as cloudquery-core progress. 
 
+Also see [full tutorial here](../tutorials/creating-new-provider.md).
+
 ## The Template
 
 Here is a template project from which you can create your own [https://github.com/cloudquery/cq-provider-template](https://github.com/cloudquery/cq-provider-template).
@@ -49,7 +51,7 @@ type Config struct {
 }
 
 
-// Pass example to cloudquery when cloudqueyr init <provider> will be called
+// Pass example to cloudquery when cloudqueyr init [provider] will be called
 func (c Config) Example() string {
     return `configuration {
     
@@ -207,4 +209,4 @@ Essentially, for each resource that you support, you just need to define two thi
 
 ## Publishing a provider
 
-To publish a provider so that it can be downloaded and added via the [`cloudquery init <provider>`](/docs/cli/commands/provider) command you'll need to [raise an issue](https://github.com/cloudquery/cloudquery/issues) with the relevant details so that we can add it to our registry.
+To publish a provider so that it can be downloaded and added via the [`cloudquery init [provider]`](/docs/cli/commands/provider) command you'll need to [raise an issue](https://github.com/cloudquery/cloudquery/issues) with the relevant details so that we can add it to our registry.
