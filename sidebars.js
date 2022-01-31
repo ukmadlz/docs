@@ -100,7 +100,12 @@ module.exports = {
          type: 'doc',
          label: 'Telemetry',
          id: 'cli/telemetry'
-       }
+       },
+       {
+        type: 'doc',
+        label: 'Rate Limiting',
+        id: 'cli/rate_limiting'
+      }
       ],
     },
       {
@@ -149,7 +154,16 @@ module.exports = {
                         'developers/sdk/table/column-resolvers',
                     ],
                 },
-                'developers/sdk/migrations',
+                {
+                    type: 'category',
+                    label: 'Migrations',
+                    items: [
+                        'developers/sdk/migrations/overview',
+                        'developers/sdk/migrations/migration-tool',
+                        'developers/sdk/migrations/generating-migrations',
+                        'developers/sdk/migrations/testing',
+                    ],
+                },
                 'developers/sdk/testing',
             ],
         },
